@@ -27,7 +27,7 @@ if [ -n "$CLASSPATH" ] ; then
 fi
 
 if [ -z "$IDP_BASE_URL" ] ; then
-  IDP_BASE_URL="http://localhost/idp"
+  IDP_BASE_URL="http://localhost:7780/fer-proxy-2fa"
 fi
 
 # add in the dependency .jar files
