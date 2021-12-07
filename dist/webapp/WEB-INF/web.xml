@@ -11,6 +11,11 @@
     servlets that may not be needed.
     -->
 
+    <context-param>
+            <param-name>idp.home</param-name>
+            <param-value>/webhome/idp/fer-proxy-2fa</param-value>
+    </context-param>
+
     <!-- Registers Spring support. -->
     <context-param>
         <param-name>net.shibboleth.idp.registerSpringConfig</param-name>
