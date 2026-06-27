@@ -23,5 +23,20 @@
                         http://www.w3.org/2009/xmlenc11# http://www.w3.org/TR/2013/REC-xmlenc-core1-20130411/xenc-schema-11.xsd"
     sortKey="1">
 
+    <MetadataProvider id="idps-test" xsi:type="FileBackedHTTPMetadataProvider" xmlns="urn:mace:shibboleth:2.0:metadata"
+                    metadataURL="https://pub.federation.renater.fr/metadata/test/idps.xml"
+                    backingFile="/var/cache/idp--fer-proxy-2fa/backingFiles/fer-test-idps-metadata.xml">
+    </MetadataProvider>
+
+    <MetadataProvider id="filex-ng-test" xsi:type="FileBackedHTTPMetadataProvider" xmlns="urn:mace:shibboleth:2.0:metadata"
+                        metadataURL="https://filex-ng-test.univ-paris1.fr/Shibboleth.sso/Metadata"
+                        backingFile="/var/cache/idp--fer-proxy-2fa/backingFiles/filex-ng-test-metadata.xml">
+    </MetadataProvider>
+
+    <MetadataProvider id="fer-proxy-2fa-manager-test" xsi:type="FileBackedHTTPMetadataProvider" xmlns="urn:mace:shibboleth:2.0:metadata"
+                        metadataURL="https://fer-proxy-2fa-manager-test.univ-paris1.fr/SAML-Metadata"
+                        backingFile="/var/cache/idp--fer-proxy-2fa/backingFiles/fer-proxy-2fa-manager-test-metadata.xml">
+    </MetadataProvider>
+
 
 </MetadataProvider>
