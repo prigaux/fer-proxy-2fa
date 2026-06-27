@@ -1,0 +1,94 @@
+<md:EntityDescriptor entityID="https://fer-proxy-2fa-test.univ-paris1.fr" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIEVDCCArygAwIBAgIVAOevVGj5J0UFElIscD0vfqNfcCQ0MA0GCSqGSIb3DQEBCwUAMCIxIDAe
+BgNVBAMMF2lkcC10ZXN0LnVuaXYtcGFyaXMxLmZyMB4XDTI2MDYyMzExNTkyM1oXDTQ2MDYyMzEx
+NTkyM1owIjEgMB4GA1UEAwwXaWRwLXRlc3QudW5pdi1wYXJpczEuZnIwggGiMA0GCSqGSIb3DQEB
+AQUAA4IBjwAwggGKAoIBgQDqhZEG083N0DnNf4ab7DKWG3enRSlzK9G0cxAcFh/3saG44rJvqGDR
+ToirPVV44LOnVXexSipjKboU7NeuFS/UWRrn46h9uXmfaRyAcjW5NBQeMnzEgsJQwPlmKGj+hAgq
+Ul4/2A20bOI9MJO/nX0FHAsvyCCUH3hy0k6eGx47FXhW8QCi8+POI8cWnFmahYrrcBKzuLnwW8a2
+m2fZqrpCtI8gJzAM4hW1TihNhU60qlfBjVVSQ+Kkg96EdsSZ8uAhi4LBMh+XzW/o+Wz8bptYmTqH
+TQF/lpFfbep3zUfYTVbxm9MWBAnEzfTa3iMM67xCm/0ts1odzY8xvCOyCroCcLPDY7TCxkOFdA71
+Qvk1eha7cNlnnrQvEeWtz7XaeDmimjNfnZzOT9pGhKoFlsutKWb6fdj6ZZx2QPu6kTeV3JEz6DmK
+HYJqlkiyhjJYzNGXySJq+Vz6mUO5i4dpo0nGt1mBwON/Vhy+ieAjlmPXyzlW3LWk5V4qNh9oUJBR
+fh8CAwEAAaOBgDB+MB0GA1UdDgQWBBTCCWeanDwEePV8BOxIZJwLu0wiADBSBgNVHREESzBJghdp
+ZHAtdGVzdC51bml2LXBhcmlzMS5mcoYuaHR0cHM6Ly9pZHAtdGVzdC51bml2LXBhcmlzMS5mci9p
+ZHAvc2hpYmJvbGV0aDAJBgNVHRMEAjAAMA0GCSqGSIb3DQEBCwUAA4IBgQAt0bZLWL0FjumjdbJJ
+JQ31LVFNzgVM/EfBRyZX+I55CgOlbhdqwx8qcX5MuGKS8pN9Qmrr4uY4Ts7LoXoRhEue2RnPKC1R
+5ljb4LrZlORELrvf+E9LwTlcrUv4+JwJF/yEhZskvdjBQ6cJ8IxtBdU8S4XlpapyuD3kg0CFXBxr
+UcttmHX4U6WJ9T6NcligFc6TxQzVwEaJtiVlcN17SRJ1QsqtmzkpGy+iaw2VFtK3A0x4lAdin6fq
+DuEGU1mLteYSZ6y/CAqjnGoz0VtlkeDzv66Dcj30uKj5LI7ah1jecQc4rWssRiO0aYy8a/jfLWYZ
+ULHOubOEEmFrJRc5qPz3od6sXgW0iShahsIOAHErrjc4x8lHgwlqhIeY2NTFyzzAMty9ozB19SKV
+9dvZd8VTK8X/gkiElSypQndbCDKhUyIec5LAYAmOdt7a7rRYxHgyZvUtdvgWS33172rDHYCyo1OG
+g4XzrWWq51IR70m3W07DIRgyG/LbP+gUqKoVmL4=
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIEVDCCArygAwIBAgIVAN8ziJugOrlcvmFoiPyZM7uaSpSkMA0GCSqGSIb3DQEBCwUAMCIxIDAe
+BgNVBAMMF2lkcC10ZXN0LnVuaXYtcGFyaXMxLmZyMB4XDTI2MDYyMzExNTkyMloXDTQ2MDYyMzEx
+NTkyMlowIjEgMB4GA1UEAwwXaWRwLXRlc3QudW5pdi1wYXJpczEuZnIwggGiMA0GCSqGSIb3DQEB
+AQUAA4IBjwAwggGKAoIBgQDATU+8l39f+0puONXnoVWZ6/Qj60IPcVeMeE4oPrGxz9lFQ3RylbZO
+/fvS36L3JyFVdz2OKPSead2oIidZ55CMy5xKBkDbPZMke1qxpJBe2BnReQj5eWbYLgBKT6kDA/xX
+izIYq8JZZgXfEUs7UTriK+LYgwNEp8k50RBZ9L7Ap9YD1rjZ4Ro14iY93rIqOuYtg+QXBc+eeIKZ
+a0BL1wxO0SU7oufxFd7ZatWDeEDXuem0+UslarsqvDwr1fEEfk9ijgAzw6Qt4vcnrBFHZf1f7MwB
+5LogNHhth8DBVRqcs1BgQ3BtKtVuGBlpszPiB1DdAaS1b53eqMrp1Epy2Ce5qTeQgfcEqbRl3GBU
+25ulIhxm4UkbAUTm7CY7Sr1g+yJCIXmFUguQ8tioMzuEZU1UqUCaINTTmSjHNyjXo8tX8uUq1n2s
+0C5fGOny4seKLJ3suClL66+dKY83/DQGSMcepj/WbPJ7VUGnXwOgDf5HmPExs5tnV3T32xhzWVV/
+G48CAwEAAaOBgDB+MB0GA1UdDgQWBBQejdLsZjvUxo3HuKnDLxcYyJ0/hjBSBgNVHREESzBJghdp
+ZHAtdGVzdC51bml2LXBhcmlzMS5mcoYuaHR0cHM6Ly9pZHAtdGVzdC51bml2LXBhcmlzMS5mci9p
+ZHAvc2hpYmJvbGV0aDAJBgNVHRMEAjAAMA0GCSqGSIb3DQEBCwUAA4IBgQAft7gcktufWP/P4X8y
+CxdDw4/Qe6vTC+jzWSxxGXU0TW/6O6N1nYGQoHO9RZrC64vdFNMPvUYfbRuVR4m8LXqazxiji8cL
+2JhYOHljBaMyvQyB6cxVl7pTRXYzsL0BljRi26MkQuJsVNC5zfRD6ajxh69F6Luc/DZ6yCb8zqPa
+r19/ZUZDPMYL5C5Q3DOnOepAXgKPHAza6n4JlnYMxf2FRKRC4A6p9ucQKVDulucZLXI7/n1QMhq1
+u5ORtdo+/A4pNpWRiBeXOcbS+O7Pu4i7L9r6UFKEPPUWCTYhzSqmWGpCm03IDjUYJK85qDBgAwAO
+Migt/2aEDSmajttAoi3Cy+nchHFdlKfNhN4jy2pYVbeDGrl3DKb+D0At5lLOKvZXh6k5CxpR9Awl
+ldhtC8q+5002JkeBc0QizaizvwnC9U5nwu1+WxiPXIDeFNqBJA+0e4cYHXJDJpTiM4bYo/waKX7E
+yJEhoa0xXC4cCZ6zNolshUc4TdPU7BLoOH8WxMg=
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:KeyDescriptor use="encryption">
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIEVDCCArygAwIBAgIVAK6e1cp3w+x6rJJU4Z3FLzpHW0MFMA0GCSqGSIb3DQEBCwUAMCIxIDAe
+BgNVBAMMF2lkcC10ZXN0LnVuaXYtcGFyaXMxLmZyMB4XDTI2MDYyMzExNTkyM1oXDTQ2MDYyMzEx
+NTkyM1owIjEgMB4GA1UEAwwXaWRwLXRlc3QudW5pdi1wYXJpczEuZnIwggGiMA0GCSqGSIb3DQEB
+AQUAA4IBjwAwggGKAoIBgQCrg/lDctuYM7O2+45z/HqKGcPaeW+KaYJY5EVeVyZroacx2gk/MYSz
+4pcohhICaDrkkRmUotyeJ+e4uLtIpRJUqWvfOGwRZ06kmVr9dTx4gpXDmQe5VyfCnfPA327YWvaW
+OHt/0J7z4wUP22HPtMHVBt2PcE1UdMS0kUGYuBtd9qJr4T+4OgYKEpj7IoUrE5L25rIbTszreKIV
+cWVnup+LLT61NJ+I9AhNrV8P8QLJ0dLTlQq1sY1VGU8YW4/bdmfgrkTSYxXpSXTXgrl/8i4vqm/C
+58oUeakJ8iTmCknGzq8SWd/XC59mc1Y6WwPnTd1f7VfuYa0pqP53R5e5Y+U2/PoP4X5ds6RFA6sw
+M1uHaUOhJ0GNgSa66/nwmGu0sLYC6ZWYEd0LZguCRzpevl1u2vXzExhOUV0p+mDCDFa8d7Tbnncs
+cYX3+5TQNdGNCE6+LTLx0vLsnFjiBTwxSbkkMw3H2XvMwYVy39GWBlGXD854YW3cHy/b9VIKBBlF
+RhUCAwEAAaOBgDB+MB0GA1UdDgQWBBQxHNkBct6dtl/hncGJP/BQeEH/kDBSBgNVHREESzBJghdp
+ZHAtdGVzdC51bml2LXBhcmlzMS5mcoYuaHR0cHM6Ly9pZHAtdGVzdC51bml2LXBhcmlzMS5mci9p
+ZHAvc2hpYmJvbGV0aDAJBgNVHRMEAjAAMA0GCSqGSIb3DQEBCwUAA4IBgQAh0TGxFCOHDkBwtD/a
+hvP1183i1NG4ESW+aW+B/QYhqdR+3/rMtM9LIRPOigj9oLzQZ7Wlej6S/VHQ+kkYJLq8LU4aO8DU
+ca+jLQocriSBsoGeZD2eXDA0e+ur8am0gzklISumtoyqyk4lLWA0c2DAzso96yz+SM3XIa2VGTqR
+HFdzcll09GVJd7htxrj9B8M+JM/dEaC+SscSJRshx6lk51U4kVuapjMdOQazIoYEh2DFgszialiX
+1l1kLArDlkkmDZPMxinyFPmjnhguo4nQxpzCmBkITypYmoWyRotPPTHPVwSSiBP6XNnmRGz7nlhE
+8OX3fS6Miuej10xy0QRRe54v+Q3+FdqbDjPwm6v1o84d4tBEkJsY3J90z17ChVJ+gJUixQ9pu115
+n4eEhdGtirBhtamrgSuQgcH6xlTLsSYYEkItoih1LUeRNpWKCAF5GZD9ZDA8gMcD5XezFAAndKTB
+J/xoHVWfwJfnwBI4mmcAdkOCIivU44PhhrYr39w=
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+    
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://fer-proxy-2fa-test.univ-paris1.fr/fer-proxy-2fa/profile/Authn/SAML2/POST/SSO" index="0"/>
+
+  </md:SPSSODescriptor>
+
+</md:EntityDescriptor>
