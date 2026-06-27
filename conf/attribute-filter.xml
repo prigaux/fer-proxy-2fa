@@ -4,4 +4,29 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="urn:mace:shibboleth:2.0:afp http://shibboleth.net/schema/idp/shibboleth-afp.xsd">
 
+    <AttributeFilterPolicy id="from_idp">
+    	<PolicyRequirementRule xsi:type="Issuer" value="https://idp-test.univ-paris1.fr" />            
+    	<AttributeRule attributeID="eduPersonPrincipalName">
+    		<PermitValueRule xsi:type="ScopeMatchesShibMDScope" />
+    	</AttributeRule>
+    </AttributeFilterPolicy>
+
+    <!-- Envoi d'un ensemble d'attributs de base aux applis internes Paris 1 & pantheonsorbonne -->
+	<AttributeFilterPolicy id="from_idp_and_to_sp">
+	    <PolicyRequirementRule xsi:type="OR">
+			<Rule xsi:type="Requester" value="https://fer-proxy-2fa-test.univ-paris1.fr"/>
+			<Rule xsi:type="Requester" value="https://filex-ng-test.univ-paris1.fr"/>
+			<Rule xsi:type="Requester" value="https://fer-proxy-2fa-manager-test.univ-paris1.fr"/>
+		</PolicyRequirementRule>
+		<AttributeRule attributeID="cn"> <PermitValueRule xsi:type="ANY"/> </AttributeRule>
+		<AttributeRule attributeID="displayName"> <PermitValueRule xsi:type="ANY"/> </AttributeRule>
+		<AttributeRule attributeID="eduPersonAffiliation"> <PermitValueRule xsi:type="ANY"/> </AttributeRule>
+		<AttributeRule attributeID="eduPersonPrimaryAffiliation"> <PermitValueRule xsi:type="ANY"/> </AttributeRule>
+		<AttributeRule attributeID="eduPersonPrincipalName"> <PermitValueRule xsi:type="ANY"/> </AttributeRule>
+		<AttributeRule attributeID="eduPersonScopedAffiliation"> <PermitValueRule xsi:type="ANY"/> </AttributeRule>
+		<AttributeRule attributeID="givenName"> <PermitValueRule xsi:type="ANY"/> </AttributeRule>
+		<AttributeRule attributeID="mail"> <PermitValueRule xsi:type="ANY"/> </AttributeRule>
+		<AttributeRule attributeID="sn"> <PermitValueRule xsi:type="ANY"/> </AttributeRule>
+	</AttributeFilterPolicy>
+
 </AttributeFilterPolicyGroup>

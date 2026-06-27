@@ -2,6 +2,7 @@
     <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
         <md:Extensions>
             <shibmd:Scope regexp="false">univ-paris1.fr</shibmd:Scope>
+            <shibmd:Scope regexp="false">test-renater.fr</shibmd:Scope>
             <mdui:UIInfo>
                 <mdui:DisplayName xml:lang="en">A name for the IdP at fer-proxy-2fa-test.univ-paris1.fr</mdui:DisplayName>
                 <mdui:Description xml:lang="en">Enter a description for the IdP at fer-proxy-2fa-test.univ-paris1.fr</mdui:Description>
