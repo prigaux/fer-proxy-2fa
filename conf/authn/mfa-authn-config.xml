@@ -39,16 +39,11 @@
     the final event, then the MFA process attempts to complete itself successfully.
     -->
     <util:map id="shibboleth.authn.MFA.TransitionMap">
-        <!-- First rule runs the IPAddress login flow. -->
         <entry key="">
-            <bean parent="shibboleth.authn.MFA.Transition" p:nextFlow="authn/IPAddress" />
+            <bean parent="shibboleth.authn.MFA.Transition" p:nextFlow="authn/SAML" />
         </entry>
         
-        <!--
-        Second rule runs a function if IPAddress succeeds, to determine whether an additional
-        factor is required.
-        -->
-        <entry key="authn/IPAddress">
+        <entry key="authn/SAML">
             <bean parent="shibboleth.authn.MFA.Transition" p:nextFlowStrategy-ref="checkSecondFactor" />
         </entry>
         
@@ -60,16 +55,28 @@
         <constructor-arg>
             <value>
             <![CDATA[
-                nextFlow = "authn/Password";
+            var logger = Java.type("org.slf4j.LoggerFactory").getLogger("checkSecondFactor");
 
-                // Check if second factor is necessary for request to be satisfied.
-                authCtx = input.getSubcontext("net.shibboleth.idp.authn.context.AuthenticationContext");
-                mfaCtx = authCtx.getSubcontext("net.shibboleth.idp.authn.context.MultiFactorAuthenticationContext");
-                if (mfaCtx.isAcceptable()) {
+            var authCtx = input.getSubcontext("net.shibboleth.idp.authn.context.AuthenticationContext");
+            var extCtx = authCtx.getSubcontext("net.shibboleth.idp.authn.context.ExternalAuthenticationContext");
+            var mfaCtx = authCtx.getSubcontext("net.shibboleth.idp.authn.context.MultiFactorAuthenticationContext");
+
+            var rpCtx = input.getSubcontext("net.shibboleth.idp.profile.context.RelyingPartyContext");
+            var rpid = rpCtx.getRelyingPartyId();
+            
+            nextFlow = "authn/EsupOtp";
+            if (mfaCtx.isAcceptable()) {
+                if (rpid === "https://filex-ng-test.univ-paris1.fr") {
+                    logger.warn('Forcing MFA for ' + rpid);
+                } else {
+                    logger.warn('No MFA required for ' + rpid);
                     nextFlow = null;
                 }
-                
-                nextFlow;   // pass control to second factor or end with the first
+            } else {
+                logger.warn('MFA required by ' + rpid);
+            }
+           
+            nextFlow;   // returned value
             ]]>
             </value>
         </constructor-arg>
